@@ -487,37 +487,19 @@ documents_guide_add_movie_1: |-
     + "\"title\": \"Amelie Poulain\""
     + "}]"
   );
-getting_started_add_documents_md: |-
-  **Maven**
-  Add the following code to the `<dependencies>` section of your project:
-  ```xml
-  <dependency>
-    <groupId>com.meilisearch.sdk</groupId>
-    <artifactId>meilisearch-java</artifactId>
-    <version>0.11.0</version>
-    <type>pom</type>
-  </dependency>
-  ```
-
-  **Gradle**
-  Add the following line to the `dependencies` section of your `build.gradle`:
-  ```groovy
-  implementation 'com.meilisearch.sdk:meilisearch-java:0.11.0'
-  ```
-
+getting_started_add_documents_md: |-  
   ```java
-  import com.meilisearch.sdk;
-  import java.nio.file.Files;
-  import java.nio.file.Path;
-
-  Path fileName = Path.of("movies.json");
-  String moviesJson = Files.readString(fileName);
-  Client client = new Client(new Config("http://localhost:7700", "masterKey"));
-  Index index = client.index("movies");
-  index.addDocuments(moviesJson);
+  public static int charSum(String str, char ch) {
+      char[] chars = str.toCharArray();
+      int sum = 0;
+      for (int i = 0; i < chars.length; i++) {
+          if (chars[i] == ch) {
+              sum++;
+          }
+      }
+      return sum;
+  }
   ```
-
-  [About this SDK](https://github.com/meilisearch/meilisearch-java)
 getting_started_check_task_status: |-
   client.getTask(0);
 getting_started_search_md: |-
