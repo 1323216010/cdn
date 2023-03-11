@@ -446,37 +446,13 @@ primary_field_guide_add_document_primary_key: |-
     }
   ], { primaryKey: 'reference_number' })
 getting_started_add_documents_md: |-
-  ```bash
-  npm install meilisearch
-  ```
-
-  Or, if you are using `yarn`
-  ```bash
-  yarn add meilisearch
-  ```
-
-  **Import**
-
-  `require` syntax:
   ```js
-  const { MeiliSearch } = require('meilisearch')
-  const movies = require('./movies.json')
+  function charSum(str, ch) {
+    for(let i = 0; i < str.length; i++) {
+      
+    }
+  }
   ```
-
-  `import` syntax:
-  ```js
-  import { MeiliSearch } from 'meilisearch'
-  import movies from './movies.json'
-  ```
-
-  **Use**
-  ```js
-  const client = new MeiliSearch({ host: 'http://localhost:7700' })
-  client.index('movies').addDocuments(movies)
-    .then((res) => console.log(res))
-  ```
-
-  [About this SDK](https://github.com/meilisearch/meilisearch-js/)
 getting_started_search_md: |-
   ```js
   client.index('movies').search('botman').then((res) => console.log(res))
