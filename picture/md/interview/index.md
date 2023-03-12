@@ -14,7 +14,9 @@
 
 线程安全：
 
-如果两个线程没有做数据持久化（写入数据库或缓存），也就是无状态的，那肯定是线程安全的。
+线程安全不安全是对于数据来说的。
+
+如果两个线程没有做数据持久化（写入数据库或缓存），那肯定是线程安全的。
 
 如果两个线程有公共资源（比如操作数据库中同一张表），但是该资源只暴露了读取的权限，没有暴露修改的权限，这样也是线程安全的。
 
@@ -53,7 +55,7 @@ Mysql有四种事务隔离级别,默认的是可重复读.
 
 1、在事务A执行过程中，事务A对数据资源进行了修改，事务B读取了事务A修改后的数据。
 
-2、由于某些原因，[事务A](https://www.zhihu.com/search?q=事务A&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A1873975439})并没有完成提交，发生了RollBack操作，则[事务B](https://www.zhihu.com/search?q=事务B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A1873975439})读取的数据就是脏数据。
+2、由于某些原因，事务A并没有完成提交，发生了RollBack操作，则事务B读取的数据就是脏数据。
 
 这种读取到另一个事务未提交的数据的现象就是脏读(Dirty Read)。
 
