@@ -445,7 +445,7 @@ primary_field_guide_add_document_primary_key: |-
       price: 5.00
     }
   ], { primaryKey: 'reference_number' })
-code_1: |-
+code_md: |-
   function charSum(str, ch) {
     let sum = 0;
     for(let i = 0; i < str.length; i++) {
