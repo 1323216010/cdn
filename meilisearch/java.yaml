@@ -487,7 +487,7 @@ documents_guide_add_movie_1: |-
     + "\"title\": \"Amelie Poulain\""
     + "}]"
   );
-code1: |-  
+code_1: |-  
   ```java
   public static int charSum(String str, char ch) {
       char[] chars = str.toCharArray();
