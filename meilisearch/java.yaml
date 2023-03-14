@@ -498,6 +498,7 @@ code_1: |-
       }
       return sum;
   }
+  
 getting_started_check_task_status: |-
   client.getTask(0);
 getting_started_search_md: |-

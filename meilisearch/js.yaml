@@ -456,6 +456,7 @@ code_1: |-
     return sum;
   }
   console.log(charSum('javascript', 'a'))
+  
 getting_started_search_md: |-
   ```js
   client.index('movies').search('botman').then((res) => console.log(res))
