@@ -488,7 +488,6 @@ documents_guide_add_movie_1: |-
     + "}]"
   );
 code_1: |-  
-  ```java
   public static int charSum(String str, char ch) {
       char[] chars = str.toCharArray();
       int sum = 0;
@@ -499,7 +498,6 @@ code_1: |-
       }
       return sum;
   }
-  ```
 getting_started_check_task_status: |-
   client.getTask(0);
 getting_started_search_md: |-
