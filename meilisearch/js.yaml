@@ -448,9 +448,13 @@ primary_field_guide_add_document_primary_key: |-
 getting_started_add_documents_md: |-
   ```js
   function charSum(str, ch) {
+    let sum = 0;
     for(let i = 0; i < str.length; i++) {
-      
+      if(str[i] === ch) {
+        sum++;
+      }
     }
+  return sum;
   }
   ```
 getting_started_search_md: |-
